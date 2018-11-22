@@ -1,0 +1,82 @@
+#ecommerce {
+  height: 100%;
+  width: 100%;
+  background-color: #909090;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  background-color: teal;
+  box-sizing: border-box;
+  border-bottom: 2px solid white;
+  display: flex;
+  flex-direction: row;
+}
+
+#home {
+  height: 100px;
+  width: 100px;
+  box-sizing: border-box;
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+}
+
+#home div {
+  margin: auto;
+}
+
+nav {
+  height: 100%;
+  width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+nav a {
+  margin: auto;
+}
+
+#profile {
+  height: 100%;
+  width: 100px;
+  margin: auto;
+  display: absolute;
+  float: right;
+}
+
+#ecomm-con {
+  height: 100vh
+}
+
+#foot-links {
+  height: 100%;
+  width: 400px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+#social-links {
+  height: 100%;
+  width: 200px;
+  margin: auto;
+  box-sizing: border-box;
+  border: 1px solid black;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  height: 150px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid black;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}

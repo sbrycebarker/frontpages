@@ -1,0 +1,14 @@
+@import url("ecomm.css");
+@import url("school.css");
+
+html {
+  margin: 0;
+}
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
