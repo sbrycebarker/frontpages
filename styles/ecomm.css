@@ -62,7 +62,7 @@ header:hover > #header-drpdwn {
 
 #header-drpdwn {
   /* top: 100px; */
-  height: 0;
+  height: 0px;
   width: 100%;
   margin: 100px 0;
   position: fixed;
@@ -89,7 +89,7 @@ header:hover > #header-drpdwn {
 }
 
 .dropitem h2 {
-  width: 150px;
+  width: 100px;
   font-size: 16px;
   overflow: hidden;
 }
@@ -101,6 +101,7 @@ header:hover > #header-drpdwn {
   display: flex;
   align-items: center;
   overflow: hidden;
+  margin: auto;
 }
 
 .dropitem {
@@ -108,7 +109,8 @@ header:hover > #header-drpdwn {
   width: 250px;
   flex-direction: column;
   overflow: hidden;
-  transition: visibility 1s
+  transition: visibility .2s;
+  visibility: hidden;
 }
 
 #dropleft h1 {
