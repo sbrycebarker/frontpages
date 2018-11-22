@@ -76,6 +76,12 @@ header:hover > #header-drpdwn {
   flex-direction: row;
 }
 
+#drop-con {
+  width: 80%;
+  height: 100%;
+  opacity: 0;
+}
+
 #dropleft {
   height: 100%;
   margin-left: 200px;
@@ -109,8 +115,8 @@ header:hover > #header-drpdwn {
   width: 250px;
   flex-direction: column;
   overflow: hidden;
-  transition: visibility .2s;
-  visibility: hidden;
+  transition: visibility .5s;
+  display: none;
 }
 
 #dropleft h1 {
