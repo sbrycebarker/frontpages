@@ -9,7 +9,6 @@ header {
   height: 100px;
   width: 100%;
   background-color: teal;
-  box-sizing: border-box;
   border-bottom: 2px solid white;
   display: flex;
   flex-direction: row;
@@ -25,12 +24,19 @@ header {
 }
 
 #home {
-  height: 100px;
+  height: 100%;
   width: 100px;
   box-sizing: border-box;
   margin-left: 100px;
   display: flex;
   align-items: center;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  flex-direction: column;
+}
+
+#home a {
+  margin: auto;
 }
 
 #home div {
@@ -55,17 +61,17 @@ header:hover > #header-drpdwn {
 }
 
 #header-drpdwn {
-  top: 100px;
+  /* top: 100px; */
   height: 0;
   width: 100%;
-  margin: 0;
+  margin: 100px 0;
   position: fixed;
   background-color: #1a1818;
   z-index: 10;
   opacity: .8;
   color: white;
   transition: 1s;
-  overflow: auto;
+  overflow: hidden;
   display: flex;
   flex-direction: row;
 }
@@ -85,21 +91,23 @@ header:hover > #header-drpdwn {
 .dropitem h2 {
   width: 150px;
   font-size: 16px;
+  overflow: hidden;
 }
 
 .dropitem li {
   height: 100px;
   margin: 5px;
   list-style-type: none;
-  border-bottom: 2px solid white;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
 .dropitem {
   margin: auto;
   width: 250px;
   flex-direction: column;
+  overflow: hidden;
   transition: visibility 1s
 }
 
