@@ -8,23 +8,36 @@ let dropcon = document.getElementById("drop-con");
 nav.addEventListener("mouseover", dropDown);
 nav.addEventListener("mouseout", upfunction);
 home.addEventListener("mouseover", dropDown);
+dropdown.addEventListener("mouseout", upfunction);
+home.addEventListener("mouseover", dropDown);
 home.addEventListener("mouseout", upfunction);
-
-
 function dropDown() {
   dropdown.style.height = "200px"
 }
 function upfunction() {
     dropdown.style.height = "0";
 }
+//
+// nav.addEventListener("mouseover", darkOut);
+// function darkOut() {
+//   ecommerce.style.opacity = .5;
+//   setTimeout(function() {
+//     dropcon.style.opacity = .8;
+//   }, 500)
+// }
 
+
+nav.addEventListener("mouseover", darkOut);
+nav.addEventListener("mouseout", lightback);
 nav.addEventListener("mouseover", darkOut);
 nav.addEventListener("mouseout", lightback);
 home.addEventListener("mouseover", darkOut);
 home.addEventListener("mouseout", lightback);
 function darkOut() {
   ecommerce.style.opacity = .5;
-  dropcon.style.opacity = 1;
+    // setTimeout(function() {
+      dropcon.style.opacity = 1;
+    // }, 500)
 }
 
 function lightback() {

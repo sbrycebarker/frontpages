@@ -1,20 +1,28 @@
 #ecommerce {
   height: 100%;
   width: 100%;
-  /* background-color: #909090; */
   font-family: sans-serif;
+  transition: opacity 2s;
+}
+
+#ecomm-con {
+  height: 100px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
 }
 
 header {
-  height: 100px;
+  height: 125px;
   width: 100%;
+  display: none;
   background-color: teal;
   border-bottom: 2px solid white;
   display: flex;
   flex-direction: row;
   position: fixed;
   z-index: 25;
-  /* visibility: hidden; */
 }
 
 .drop h1 {
@@ -25,7 +33,7 @@ header {
 
 #home {
   height: 100%;
-  width: 100px;
+  width: 125px;
   box-sizing: border-box;
   margin-left: 100px;
   display: flex;
@@ -33,10 +41,16 @@ header {
   border-right: 2px solid black;
   border-left: 2px solid black;
   flex-direction: column;
+  transition: color 1s;
+  transition-delay: width .5s;
 }
 
 #home a {
   margin: auto;
+}
+
+#home:hover {
+  color: white
 }
 
 #home div {
@@ -46,25 +60,61 @@ header {
 nav {
   height: 100%;
   width: 500px;
+  display: flex;
+  position: absolute;
+  right: 300px;
+  flex-direction: row;
+  display: flex;
+}
+
+nav li {
   margin: auto;
+  transition: color .5s;
+}
+
+nav li:hover {
+  color: white;
+}
+
+nav:hover > #header-drpdwn {
+  height: 200px;
+}
+
+
+nav:hover > #drop-con {
+  opacity: 1;
+}
+
+#hide {
+  height: 25px;
+  width: 400px;
+  right: 0;
+  font-size: 12px;
   display: flex;
   flex-direction: row;
+  position: absolute;
 }
 
-nav a {
+#hide a {
   margin: auto;
 }
 
-header:hover > #header-drpdwn {
-  height: 200px;
-  visibility: visible;
+#hide a:hover {
+  color: white;
+}
+
+#hide h3 {
+  width: 120px;
+  margin: auto;
+  text-align: center;
+  transition: color 1s;
 }
 
 #header-drpdwn {
-  /* top: 100px; */
   height: 0px;
   width: 100%;
-  margin: 100px 0;
+  margin: 125px 0;
+  left: 0;
   position: fixed;
   background-color: #1a1818;
   z-index: 10;
@@ -78,26 +128,24 @@ header:hover > #header-drpdwn {
 
 #drop-con {
   width: 80%;
-  height: 100%;
+  border: 1px solid white;
+  height: 80%;
   opacity: 0;
-}
-
-#dropleft {
-  height: 100%;
-  margin-left: 200px;
-  position: relative;
-  z-index: 10;
-  overflow: hidden;
-  box-sizing: border-box;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  transition: opacity 1s;
+  flex-direction: row;
+  margin: auto;
 }
 
 .dropitem h2 {
   width: 100px;
   font-size: 16px;
   overflow: hidden;
+  transition: 1s;
+}
+
+.dropitem h2:hover {
+  color: grey
 }
 
 .dropitem li {
@@ -111,18 +159,6 @@ header:hover > #header-drpdwn {
 }
 
 .dropitem {
-  margin: auto;
-  width: 250px;
-  flex-direction: column;
-  overflow: hidden;
-  transition: visibility .5s;
-  display: none;
-}
-
-#dropleft h1 {
-}
-
-#dropright {
   height: 100%;
   margin-left: 200px;
   position: relative;
@@ -131,6 +167,10 @@ header:hover > #header-drpdwn {
   box-sizing: border-box;
   display: flex;
   align-items: center;
+  flex-direction: column;
+}
+
+#dropleft h1 {
 }
 
 #profile {
@@ -144,25 +184,23 @@ header:hover > #header-drpdwn {
   margin: auto;
 }
 
-#ecommerce {
-  position: green;
-}
-
 #ecomm-con {
-  width: 100vw;
-  height: 100vh;
+  height: 200vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 #owl-carousel {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   position: relative;
-  z-index:
 }
 
 #one {
   height: 100%;
   width: 100%;
+  margin: 0;
   background-image: url("../assets/architecture-buildings.jpg");
 }
 
@@ -202,8 +240,10 @@ header:hover > #header-drpdwn {
 } */
 
 #content {
-  height: 150vh;
+  height: 100%;
+  width: 100%;
   background-color: white;
+  position: relative;
 }
 
 #foot-links {
@@ -213,6 +253,7 @@ header:hover > #header-drpdwn {
   display: flex;
   align-items: center;
   flex-direction: row;
+  transition: 1s;
 }
 
 #social-links {
@@ -226,17 +267,40 @@ header:hover > #header-drpdwn {
   flex-direction: column;
 }
 
-#social-links ul {
-  margin: auto 0px;
+#foot-links ul {
   width: 100px;
+  padding: 0;
+  margin: auto;
+  text-align: center;
 }
 
+#foot-links ul:hover {
+  font-size: 19px;
+  color: teal
+}
+
+#social-links ul {
+  height: 25px;
+  width: 100px;
+  padding: 0;
+  margin: auto;
+  text-align: center;
+}
+
+footer ul {
+  transition: font-size .5s;
+}
+
+#social-links ul:hover {
+  font-size: 16px;
+  color: teal
+}
 
 footer {
-  height: 200px;
+  height: 300px;
   width: 100%;
   box-sizing: border-box;
-  border: 1px solid black;
+  border-top: 2px solid black;
   background-color: white;
   display: flex;
   flex-direction: row;
