@@ -17,15 +17,6 @@ function dropDown() {
 function upfunction() {
     dropdown.style.height = "0";
 }
-//
-// nav.addEventListener("mouseover", darkOut);
-// function darkOut() {
-//   ecommerce.style.opacity = .5;
-//   setTimeout(function() {
-//     dropcon.style.opacity = .8;
-//   }, 500)
-// }
-
 
 nav.addEventListener("mouseover", darkOut);
 nav.addEventListener("mouseout", lightback);

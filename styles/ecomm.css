@@ -57,7 +57,7 @@ header {
   margin: auto;
 }
 
-nav {
+#nav {
   height: 100%;
   width: 500px;
   display: flex;
@@ -67,22 +67,42 @@ nav {
   display: flex;
 }
 
-nav li {
+#nav li {
   margin: auto;
   transition: color .5s;
+  display: flex;
+  align-items: center;
 }
 
-nav li:hover {
+#nav li:hover {
   color: white;
 }
 
-nav:hover > #header-drpdwn {
+#nav:hover > #header-drpdwn {
   height: 200px;
 }
 
 
-nav:hover > #drop-con {
+#nav:hover > #drop-con {
   opacity: 1;
+}
+
+#primary-nav {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  flex-direction: row;
+  display: flex;
+}
+
+#primary-nav a:after {
+  padding-left: .625rem;
+  font-size: 25px;
+  content: "\00B7";
+  color: black;
 }
 
 #hide {
@@ -100,14 +120,12 @@ nav:hover > #drop-con {
 }
 
 #hide a:hover {
-  color: white;
+  color
 }
 
 #hide h3 {
-  width: 120px;
   margin: auto;
   text-align: center;
-  transition: color 1s;
 }
 
 #header-drpdwn {
