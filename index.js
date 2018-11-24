@@ -1,9 +1,9 @@
 let header = document.getElementById('header');
 let dropdown = document.getElementById("header-drpdwn");
-let nav = document.getElementById("nav");
+let nav = document.getElementById("primary-nav");
 let ecommerce = document.getElementById("ecomm-con");
 let home = document.getElementById('home');
-let dropcon = document.getElementById("drop-con");
+// let dropcon = document.getElementById("drop-con");
 
 nav.addEventListener("mouseover", dropDown);
 nav.addEventListener("mouseout", upfunction);
@@ -27,11 +27,11 @@ home.addEventListener("mouseout", lightback);
 function darkOut() {
   ecommerce.style.opacity = .5;
     // setTimeout(function() {
-      dropcon.style.opacity = 1;
+      // dropcon.style.opacity = 1;
     // }, 500)
 }
 
 function lightback() {
   ecommerce.style.opacity = 1;
-  dropcon.style.opacity = 0;
+  // dropcon.style.opacity = 0;
 }

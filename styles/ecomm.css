@@ -17,7 +17,7 @@ header {
   height: 125px;
   width: 100%;
   display: none;
-  background-color: teal;
+  background-color: #1a1818;
   border-bottom: 2px solid white;
   display: flex;
   flex-direction: row;
@@ -38,10 +38,11 @@ header {
   margin-left: 100px;
   display: flex;
   align-items: center;
-  border-right: 2px solid black;
-  border-left: 2px solid black;
+  border-right: 2px solid white;
+  border-left: 2px solid white;
   flex-direction: column;
   transition: color 1s;
+  color: white;
   transition-delay: width .5s;
 }
 
@@ -50,7 +51,7 @@ header {
 }
 
 #home:hover {
-  color: white
+  color: grey
 }
 
 #home div {
@@ -65,6 +66,7 @@ header {
   right: 300px;
   flex-direction: row;
   display: flex;
+  color: white;
 }
 
 #nav li {
@@ -75,10 +77,10 @@ header {
 }
 
 #nav li:hover {
-  color: white;
+  color: grey;
 }
 
-#nav:hover > #header-drpdwn {
+#learn:hover > #header-drpdwn {
   height: 200px;
 }
 
@@ -102,7 +104,7 @@ header {
   padding-left: .625rem;
   font-size: 25px;
   content: "\00B7";
-  color: black;
+  color: white;
 }
 
 #hide {
@@ -120,7 +122,7 @@ header {
 }
 
 #hide a:hover {
-  color
+  color: #01FB01;
 }
 
 #hide h3 {
@@ -131,7 +133,7 @@ header {
 #header-drpdwn {
   height: 0px;
   width: 100%;
-  margin: 125px 0;
+  margin: 64px 0;
   left: 0;
   position: fixed;
   background-color: #1a1818;
@@ -144,7 +146,7 @@ header {
   flex-direction: row;
 }
 
-#drop-con {
+#learn-con {
   width: 80%;
   border: 1px solid white;
   height: 80%;
@@ -188,9 +190,6 @@ header {
   flex-direction: column;
 }
 
-#dropleft h1 {
-}
-
 #profile {
   height: 100px;
   width: 100px;
@@ -229,20 +228,20 @@ header {
   top: 325px;
   box-sizing: border-box;
   position: absolute;
-  border: 2px solid white;
-  background-color: grey;
+  border: 2px solid #01FB01;
+  background-color: #1a1818;
   opacity: .9
 }
 
 #hero-text h1, #hero-text h2 {
   margin: 10px;
-  color: white;
+  color: #01FB01;
 }
 
 #hero-text p {
   line-height: 2;
-  color: white;
   margin: 10px;
+  color: white;
 }
 
 /* #two {
