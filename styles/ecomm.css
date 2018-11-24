@@ -63,7 +63,7 @@ header {
   width: 500px;
   display: flex;
   position: absolute;
-  right: 300px;
+  right: 200px;
   flex-direction: row;
   display: flex;
   color: white;
@@ -78,6 +78,17 @@ header {
 
 #nav li:hover {
   color: grey;
+}
+
+#nav li::before {
+  content: "\00B7";
+  font-size: 20px;
+  padding-right: .75rem
+}
+
+#learn::before {
+  content: 0;
+  display: none;
 }
 
 #learn:hover > #header-drpdwn {
@@ -108,7 +119,7 @@ header {
 }
 
 #hide {
-  height: 25px;
+  height: 50px;
   width: 400px;
   right: 0;
   font-size: 12px;
@@ -119,6 +130,7 @@ header {
 
 #hide a {
   margin: auto;
+  transition: color 1s;
 }
 
 #hide a:hover {
@@ -140,7 +152,7 @@ header {
   z-index: 10;
   opacity: .8;
   color: white;
-  transition: 1s;
+  transition: .5s;
   overflow: hidden;
   display: flex;
   flex-direction: row;
@@ -202,7 +214,7 @@ header {
 }
 
 #ecomm-con {
-  height: 200vh;
+  height: 300vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -261,6 +273,68 @@ header {
   width: 100%;
   background-color: white;
   position: relative;
+  background: url("../assets/duskcity.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#content-heading {
+  width: 400px;
+  margin: 100px auto;
+  background-color: #01FB01;
+  text-align: center;
+  font-size: 30px;
+  padding: 15px 0;
+}
+
+#more {
+  margin: auto;
+  width: 400px;
+  text-align: center;
+  top: 300px;
+}
+
+#content hr {
+  width: 80%
+}
+
+#more span {
+  font-family: monospace;
+}
+
+#cards {
+  height: 900px;
+  width: 80%;
+  margin: auto;
+  border: 1px solid black;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas:
+  'card1 card2'
+  'card3 card4';
+  grid-template-columns: repeat(2, 2fr);
+}
+
+.card1 {
+  grid-area: card1
+}
+
+.card2 {
+  grid-area: card2
+}
+
+.card3 {
+  grid-area: card3
+}
+
+.card4 {
+  grid-area: card4
+}
+
+.card {
+  background: white;
+  padding: .5rem;
+  border-bottom: $secondary-color 3px solid
 }
 
 #foot-links {
@@ -289,11 +363,12 @@ header {
   padding: 0;
   margin: auto;
   text-align: center;
+  transition: color 1s, font-size 1s;
 }
 
 #foot-links ul:hover {
   font-size: 19px;
-  color: teal
+  color: #01FB01
 }
 
 #social-links ul {
@@ -302,23 +377,27 @@ header {
   padding: 0;
   margin: auto;
   text-align: center;
+  transition: color 1s, font-size 1s;
 }
 
 footer ul {
-  transition: font-size .5s;
+  transition: font-size 1s;
+  cursor: pointer;
 }
 
 #social-links ul:hover {
   font-size: 16px;
-  color: teal
+  color: #01FB01
 }
 
 footer {
   height: 300px;
   width: 100%;
   box-sizing: border-box;
-  border-top: 2px solid black;
-  background-color: white;
+  border-top: 2px solid white;
+  background-color: #333333;
   display: flex;
+  color: white;
+  transition: color 1s;
   flex-direction: row;
 }
