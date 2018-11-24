@@ -4,28 +4,35 @@ let nav = document.getElementById("primary-nav");
 let ecommerce = document.getElementById("ecomm-con");
 let home = document.getElementById('home');
 let learn = document.getElementById("learn");
+let buy = document.getElementById("search");
+let learncon = document.getElementById("learn-con");
 // let dropcon = document.getElementById("drop-con");
 
-console.log(learn)
 nav.addEventListener("mouseover", dropDown);
 nav.addEventListener("mouseout", upfunction);
 dropdown.addEventListener("mouseout", upfunction);
+
+
 function dropDown() {
-  dropdown.style.height = "400px";
-
- learn.addEventListener("mouseover", showMenu); 
-
-   let mouseOn = learn
-   function showMenu(mouseOn) {
-     console.log("showMenu")
-     console.log(mouseOn)
-   }
-
-
+dropdown.style.height = "400px";
 }
 function upfunction() {
     dropdown.style.height = "0";
 }
+
+
+learn.addEventListener("mouseover", showMenu);
+buy.addEventListener("mouseover", hideMenu);
+
+ function showMenu(menu) {
+   console.log("showMenu", menu)
+   learncon.style.opacity = 1;
+ }
+
+ function hideMenu(menu){
+  console.log("hideMenu", menu)  
+  learncon.style.opacity = 0;
+ }
 
 nav.addEventListener("mouseover", darkOut);
 nav.addEventListener("mouseout", lightback);

@@ -164,7 +164,6 @@ header {
   height: 80%;
   opacity: 0;
   display: flex;
-  transition: opacity 1s;
   flex-direction: row;
   margin: auto;
 }
