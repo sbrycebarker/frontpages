@@ -22,6 +22,7 @@ header {
   display: flex;
   flex-direction: row;
   position: fixed;
+  transition: height .5s;
   z-index: 25;
 }
 
@@ -41,7 +42,7 @@ header {
   border-right: 2px solid white;
   border-left: 2px solid white;
   flex-direction: column;
-  transition: color 1s;
+  transition: color 1s, width .5s;
   color: white;
   transition-delay: width .5s;
 }
@@ -70,7 +71,8 @@ header {
 }
 
 #nav li {
-  margin: auto;
+  padding-bottom: 25px;
+  margin: auto 0  0 auto;
   transition: color .5s;
   display: flex;
   align-items: center;
@@ -86,14 +88,18 @@ header {
   padding-right: .75rem
 }
 
+#search:hover {
+  color: #01FB01 !important;;
+}
+
 #learn::before {
   content: 0;
   display: none;
 }
-
+/*
 #learn:hover > #header-drpdwn {
   height: 200px;
-}
+} */
 
 
 #nav:hover > #drop-con {
@@ -103,7 +109,7 @@ header {
 #primary-nav {
   height: 50%;
   width: 100%;
-  display: flex;
+  display: inline-block;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -162,7 +168,6 @@ header {
   width: 80%;
   border: 1px solid white;
   height: 80%;
-  opacity: 0;
   display: flex;
   flex-direction: row;
   margin: auto;
@@ -174,6 +179,15 @@ header {
   height: 80%;
   opacity: 0;
   display: flex;
+  margin: auto;
+}
+
+#search-con {
+  width: 80%;
+  border: 1px solid white;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
   margin: auto;
 }
 
@@ -213,6 +227,15 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.dropmenu {
+  width: 80%;
+  border: 1px solid white;
+  height: 80%;
+  opacity: 0;
+  display: none;
+  margin: auto;
 }
 
 #profile {
@@ -315,11 +338,9 @@ header {
   font-family: monospace;
 }
 
-#cards {
-  height: 900px;
+#cards-feature {
   width: 80%;
   margin: auto;
-  border: 1px solid black;
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
@@ -344,10 +365,27 @@ header {
   grid-area: card4
 }
 
-.card {
+.card img {
+  height: auto;
+  width: 100%;
   background: white;
   padding: .5rem;
   border-bottom: $secondary-color 3px solid
+}
+
+#cards-three {
+  height: 400px;
+  width: 80%;
+  margin: 100px auto;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas:
+  'card1 card2 card3';
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.three {
+  background-color: white;
 }
 
 #foot-links {
@@ -380,7 +418,7 @@ header {
 }
 
 #foot-links ul:hover {
-  font-size: 19px;
+  /* font-size: 19px; */
   color: #01FB01
 }
 
@@ -399,7 +437,7 @@ footer ul {
 }
 
 #social-links ul:hover {
-  font-size: 16px;
+  /* font-size: 16px; */
   color: #01FB01
 }
 
@@ -411,6 +449,6 @@ footer {
   background-color: #333333;
   display: flex;
   color: white;
-  transition: color 1s;
+  transition: color .5s;
   flex-direction: row;
 }

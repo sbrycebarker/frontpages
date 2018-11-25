@@ -17,7 +17,7 @@
           Home
         </a>
       </div>
-      <nav id="nav">
+      <nav id="nav" onmouseout="upfunction()">
         <div id="hide">
           <a href="">
             <h3><i class="fa fa-map-marker"></i> Dealer Locator</h3>
@@ -30,30 +30,30 @@
           </a>
         </div>
         <nav id="primary-nav">
-          <li id="learn" onmouseover="showMenu('learn-con')">
+          <li id="learn" onmouseover="showMenu('learn-con'), dropDown()">
             <span>Learn</span>
           </li>
-          <li id="buy" onmouseover="showMenu('buy-con')">
+          <li id="buy" onmouseover="showMenu('buy-con'), dropDown()">
             <span>Buy</span>
             <div></div>
           </li>
-          <li id="own" onmouseover="showMenu('own-con')">
+          <li id="own" onmouseover="showMenu('own-con'), dropDown()">
             <span>Own</span>
             <div></div>
           </li>
-          <li id="connect" onmouseover="showMenu('connect-con')">
+          <li id="connect" onmouseover="showMenu('connect-con'), dropDown()">
             <span>Connect</span>
             <div></div>
           </li>
-          <li id="products" onmouseover="showMenu('products-con')">
+          <li id="products" onmouseover="showMenu('products-con'), dropDown()">
             <span><i class="fa fa-laptop"></i> Products</span>
             <div></div>
           </li>
-          <li id="search" style="margin-right: 0;" onmouseover="showMenu('search-con')">
+          <li id="search" style="margin-right: 0;" onmouseover="newFunction()">
             <span><i class="fa fa-search"></i> Search</span>
             <div></div>
           </li>
-          <div id="header-drpdwn" class="drop">
+          <div id="header-drpdwn" class="drop" onmouseover="dropDown()">
             <div id="learn-con">
               <div class="dropitem">
                 <li><h1>Items</h1></li>
@@ -128,12 +128,7 @@
             </div>
             <div id="search-con" class="dropmenu">
               <div class="dropitem">
-                <li><h1>Search</h1></li>
-                <ul>
-                  <h2>One</h2>
-                  <h2>two</h2>
-                  <h2>three</h2>
-                </ul>
+                <input type="text" placeholder="I'm searching for ...">
               </div>
             </div>
           </div>
@@ -157,14 +152,19 @@
 
       <div id="content">
         <h1 id="content-heading">Content Stuff</h1>
-        <h1 id="more">More <span>from Your</span> Store</h1>
+        <h1 id="more">More <span>from</span> Your Store</h1>
         <hr>
 
-        <div id="cards">
-          <div class="card1 card"></div>
-          <div class="card2 card"></div>
-          <div class="card3 card"></div>
-          <div class="card4 card"></div>
+        <div id="cards-feature">
+          <div class="card1 card"><img src="./assets/car-computer.jpg" alt=""></div>
+          <div class="card2 card"><img src="./assets/camera.jpg" alt=""></div>
+          <div class="card3 card"><img src="./assets/backlit.jpg" alt=""></div>
+          <div class="card4 card"><img src="./assets/mobile.jpg" alt=""></div>
+        </div>
+        <div id="cards-three">
+          <div class="three"><img src="" alt=""></div>
+          <div class="three"><img src="" alt=""></div>
+          <div class="three"><img src="" alt=""></div>
         </div>
       </div>
     </div>
