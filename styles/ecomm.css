@@ -168,6 +168,20 @@ header {
   margin: auto;
 }
 
+#buy-con {
+  width: 80%;
+  border: 1px solid white;
+  height: 80%;
+  opacity: 0;
+  display: flex;
+  margin: auto;
+}
+
+#buy:hover + #buy-con {
+  display: flex;
+  opacity: 1;
+}
+
 .dropitem h2 {
   width: 100px;
   font-size: 16px;
