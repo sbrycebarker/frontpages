@@ -13,14 +13,10 @@ let search = document.getElementById('search-con');
 let hide = document.getElementById('hide');
 // let dropcon = document.getElementById("drop-con");
 
-let menus = [learncon, buy, own, connect, products, search]
-
-// nav.addEventListener("mouseover", dropDown);
-// nav.addEventListener("mouseout", upfunction);
-// dropdown.addEventListener("mouseout", upfunction);
+let menus = [learncon, buy, own, connect, products]
 
  function showMenu(menu) {
-   dropDown(menu);
+   // dropDown(menu);
    for (i = 0; i < menus.length; i++) {
      // console.log("i", menus[i]);
      menus[i].style.opacity = '0';
@@ -31,26 +27,38 @@ let menus = [learncon, buy, own, connect, products, search]
    menu.style.display = 'flex';
  }
 
- function dropDown(menu) {
-   if (menu !== 'search-con') {
-     dropdown.style.height = "400px";
-   }
-   if (menu === 'search-con') {
-     dropdown.style.backgroundColor  = "#01FB01";
-     dropdown.style.height = "250px";
-   }
-
-   }
-
-function newFunction() {
-  for (i = 0; i < menus.length; i++) {
+function searchMenu() {
+  // search.style.display = "flex";
     // console.log("i", menus[i]);
-    menus[i].style.opacity = '0';
-    menus[i].style.display = 'none';
-  }
-  dropdown.style.height = "200px"
-  dropdown.style.backgroundColor  = "#01FB01";
+    search.style.height = 0;
+    search.style.opacity = 0;
+
+  search.style.display = "flex";
+  // console.log("search")
+  search.style.height = "200px";
+  search.style.width = "100%";
+  search.style.opacity = 1;
+  search.style.backgroundColor  = "#01FB01";
 }
+
+function searchClose() {
+  // console.log("close");
+  search.style.height = 0;
+  console.log(search.style.height)
+  if (search.style.height === '0px') {
+    setTimeout(function(){
+      console.log("noe search")
+      search.style.display = 'none'
+    }, 500)
+  }
+}
+
+function dropDown(menu) {
+  if (menu !== 'search-con') {
+    dropdown.style.height = "400px";
+  }
+
+  }
 
  function upfunction() {
    dropdown.style.height = "0";
@@ -69,24 +77,27 @@ nav.addEventListener("mouseover", darkOut);
 nav.addEventListener("mouseout", lightback);
 function darkOut() {
   ecommerce.style.opacity = .5;
-
 }
 
 function lightback() {
   ecommerce.style.opacity = 1;
-  // dropcon.style.opacity = 0;
+  search.style.height = 0;
 }
 
 window.addEventListener('scroll', function(evt) {
     let pos = window.scrollY
     if (pos !== 0) {
-    hide.style.display = "none"
-    header.style.height = "75px"
-    home.style.width = "75px"
+    hide.style.display = "none";
+    header.style.height = "75px";
+    home.style.width = "75px";
+    search.style.top = "75px";
+    dropdown.style.top = "13px";
   } else {
       hide.style.display = "flex";
       home.style.width = "125px";
       header.style.height = "125px";
+      search.style.top = "125px";
+      dropdown.style.top = "60px";
   }
 
 })

@@ -30,31 +30,31 @@
           </a>
         </div>
         <nav id="primary-nav">
-          <li id="learn" onmouseover="showMenu('learn-con'), dropDown()">
+          <li id="learn" class="mavitem" onmouseover="showMenu('learn-con'), dropDown()">
             <span>Learn</span>
           </li>
-          <li id="buy" onmouseover="showMenu('buy-con'), dropDown()">
+          <li id="buy" class="mavitem" onmouseover="showMenu('buy-con'), dropDown()">
             <span>Buy</span>
             <div></div>
           </li>
-          <li id="own" onmouseover="showMenu('own-con'), dropDown()">
+          <li id="own" class="mavitem" onmouseover="showMenu('own-con'), dropDown()">
             <span>Own</span>
             <div></div>
           </li>
-          <li id="connect" onmouseover="showMenu('connect-con'), dropDown()">
+          <li id="connect" class="mavitem" onmouseover="showMenu('connect-con'), dropDown()">
             <span>Connect</span>
             <div></div>
           </li>
-          <li id="products" onmouseover="showMenu('products-con'), dropDown()">
+          <li id="products" class="mavitem" onmouseover="showMenu('products-con'), dropDown()">
             <span><i class="fa fa-laptop"></i> Products</span>
             <div></div>
           </li>
-          <li id="search" style="margin-right: 0;" onmouseover="newFunction()">
+          <li id="search" class="" style="margin-right: 0;" onmouseover="searchMenu()">
             <span><i class="fa fa-search"></i> Search</span>
             <div></div>
           </li>
           <div id="header-drpdwn" class="drop" onmouseover="dropDown()">
-            <div id="learn-con">
+            <div id="learn-con" onmouseover="dropDown()">
               <div class="dropitem">
                 <li><h1>Items</h1></li>
                 <ul>
@@ -80,7 +80,7 @@
                 </ul>
               </div>
             </div>
-            <div id="buy-con" class="dropmenu">
+            <div id="buy-con" class="dropmenu" onmouseover="dropDown()">
               <div>
                 <div class="dropitem">
                   <li><h1>Buy</h1></li>
@@ -92,7 +92,7 @@
                 </div>
               </div>
             </div>
-            <div id="own-con" class="dropmenu">
+            <div id="own-con" class="dropmenu" onmouseover="dropDown()">
               <div>
                 <div class="dropitem">
                   <li><h1>Own</h1></li>
@@ -104,7 +104,7 @@
                 </div>
               </div>
             </div>
-            <div id="connect-con" class="dropmenu">
+            <div id="connect-con" class="dropmenu" onmouseover="dropDown()">
               <div>
                 <div class="dropitem">
                   <li><h1>connect</h1></li>
@@ -116,7 +116,7 @@
                 </div>
               </div>
             </div>
-            <div id="products-con" class="dropmenu">
+            <div id="products-con" class="dropmenu" onmouseover="dropDown()">
                 <div class="dropitem">
                   <li><h1>Products</h1></li>
                   <ul>
@@ -126,22 +126,29 @@
                   </ul>
                 </div>
             </div>
-            <div id="search-con" class="dropmenu">
-              <div class="dropitem">
-                <input type="text" placeholder="I'm searching for ...">
-              </div>
-            </div>
           </div>
         </nav>
       </nav>
+      <div id="search-con" class="searchmenu" onmouseover="searchMenu(), upfunction()" onmouseout="searchClose(), upfunction()">
+        <div class="searchbox">
+          <input type="text" style="color: white" placeholder="I'm searching for ...">
+        </div>
+        <button>Go</button>
+      </div>
     </header>
+    <div id="search-con" class="searchmenu" onmouseover="searchMenu(), upfunction()" onmouseout="searchClose(), upfunction()">
+      <div class="searchbox">
+        <input type="text" style="color: white" placeholder="I'm searching for ...">
+      </div>
+      <button>Go</button>
+    </div>
     <div id="ecomm-con">
       <div id="owl-carousel">
         <div id="one" class="one">
           <div id="hero-text">
             <h1>Things</h1>
             <h2>Other things</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quod assumenda, quo, repellat saepe quisquam nihil voluptatum minus dolor quam sunt ex aliquam. Eveniet, sint.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quod assumenda, quo, repellat saepe quisquam nihil aliquam. Eveniet, sint.</p>
           </div>
         </div>
         <div id="two"></div>
@@ -152,7 +159,7 @@
 
       <div id="content">
         <h1 id="content-heading">Content Stuff</h1>
-        <h1 id="more">More <span>from</span> Your Store</h1>
+        <h1 id="more">More <span>from</span> Store</h1>
         <hr>
 
         <div id="cards-feature">
@@ -162,18 +169,63 @@
           <div class="card4 card"><img src="./assets/mobile.jpg" alt=""></div>
         </div>
         <div id="cards-three">
-          <div class="three"><img src="" alt=""></div>
-          <div class="three"><img src="" alt=""></div>
-          <div class="three"><img src="" alt=""></div>
+          <div class="three">
+            <img src="./assets/adults-business-coffee.jpg" alt="">
+              <h1>Card title</h1>
+              <p>Card content Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. </p>
+              <div class="btn-con">
+                <button>Go</button>
+              </div>
+          </div>
+          <div class="three">
+            <img src="./assets/beautifulcell.jpg" alt="">
+              <h1>Card title</h1>
+              <p>Card content Lorem ipsum dolor sit amet. Avoluptates perspiciatis modi. </p>
+              <div class="btn-con">
+                <button>Tips</button>
+              </div>
+          </div>
+          <div class="three">
+            <img src="./assets/mobiles.jpg" alt="">
+              <h1>Card title</h1>
+              <p>Card content Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+              <div class="btn-con">
+                <button>Connect</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <footer>
       <div id="foot-links">
-        <ul>Contact</ul>
-        <ul>Support</ul>
-        <ul>FAQ</ul>
-        <ul>Legal</ul>
+        <div>
+          <h1>Contact</h1>
+          <ul>Contact Us</ul>
+          <ul>Press</ul>
+          <ul>Promos</ul>
+          <ul>Careers</ul>
+        </div>
+        <div>
+          <h1>Support</h1>
+          <ul>Contact Us</ul>
+          <ul>Press</ul>
+          <ul>Promos</ul>
+          <ul>Careers</ul>
+        </div>
+        <div>
+          <h1>FAQ</h1>
+          <ul>Contact Us</ul>
+          <ul>Press</ul>
+          <ul>Promos</ul>
+          <ul>Careers</ul>
+        </div>
+        <div>
+          <h1>Legal</h1>
+          <ul>Contact Us</ul>
+          <ul>Press</ul>
+          <ul>Promos</ul>
+          <ul>Careers</ul>
+        </div>
       </div>
       <div id="social-links">
         <ul>Facebook <i class="fa fa-facebook-square" aria-hidden="true"></i></ul>
