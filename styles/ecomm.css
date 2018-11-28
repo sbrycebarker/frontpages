@@ -153,6 +153,10 @@ header {
   width: 100%;
   margin: 64px 0;
   left: 0;
+  background-image: url('../assets/architecture-wide.jpg');
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  background-position: center;
   position: fixed;
   background-color: #1a1818;
   z-index: 10;
