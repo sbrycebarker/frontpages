@@ -385,6 +385,10 @@ input::placeholder {
   grid-template-columns: repeat(2, 2fr);
 }
 
+.card {
+  position: relative;
+}
+
 .card1 {
   grid-area: card1
 }
@@ -406,7 +410,14 @@ input::placeholder {
   width: 100%;
   background: white;
   padding: .5rem;
-  border-bottom: $secondary-color 3px solid
+  position: relative;
+  border-bottom: $secondary-color 3px solid;
+  z-index: 0
+}
+
+.card div {
+  color: white;
+  z-index: 5;
 }
 
 #cards-three {
