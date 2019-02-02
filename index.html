@@ -9,7 +9,8 @@
   <title>Landing Pages</title>
 </head>
 <body id="body">
-  <section id="ecommerce">
+<div class="slideshow-container">
+  <div id="ecommerce" class="mySlides fade">
     <header id="header">
       <div id="home">
         <a href="">
@@ -165,30 +166,34 @@
         <div id="cards-feature">
           <div class="card1 card">
             <img src="./assets/car-computer.jpg" alt="">
-            <div>
+            <div id="card-con">
               <h1>Auto</h1>
               <p>Lorem ipsum dolor sit amet.</p>
+              <h3>Lorem ipsum</h3>
             </div>
           </div>
           <div class="card2 card">
             <img src="./assets/camera.jpg" alt="">
-            <div>
+            <div id="card-con">
               <h1>Cameras</h1>
               <p>Lorem ipsum dolor sit amet.</p>
+              <h3>Lorem ipsum</h3>
             </div>
           </div>
           <div class="card3 card">
             <img src="./assets/backlit.jpg" alt="">
-            <div>
+            <div id="card-con">
               <h1>Keyboards</h1>
               <p>Lorem ipsum dolor sit amet.</p>
+              <h3>Lorem ipsum</h3>
             </div>
           </div>
           <div class="card4 card">
             <img src="./assets/mobile.jpg" alt="">
-            <div>
+            <div id="card-con">
               <h1>Mobile</h1>
               <p>Lorem ipsum dolor sit amet.</p>
+              <h3>Lorem ipsum</h3>
             </div>
           </div>
         </div>
@@ -258,7 +263,12 @@
         <ul>Email <i class="fa fa-envelope" aria-hidden="true"></i></ul>
       </div>
     </footer>
-  </section>
+  </div>
+  <div id="photography" class="mySlides fade">
+    <div id="greet">
+      <h1>HEY EVERYBODY!!</h1>
+    </div>
+  </div>
   <section>
 
   </section>
@@ -268,9 +278,9 @@
   <section>
 
   </section>
-  <section>
-
-  </section>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js" charset="utf-8"></script>
 <script src="https://use.fontawesome.com/9c92e0c655.js"></script>

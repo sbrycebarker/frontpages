@@ -416,8 +416,24 @@ input::placeholder {
 }
 
 .card div {
+  width: 300px;
   color: white;
   z-index: 5;
+  position: absolute;
+  bottom: 100px;
+  left: 125px;
+}
+
+#card-con h3 {
+  height: 30px;
+  padding: 5px;
+  background-color: grey;
+  transition: 1s;
+}
+
+#card-con h3:hover {
+  background-color: #01FB01;
+  cursor: pointer;
 }
 
 #cards-three {
@@ -527,9 +543,9 @@ footer ul {
 }
 
 #social-links ul:hover {
-  /* font-size: 16px; */
   color: #01FB01
 }
+
 
 footer {
   height: 300px;
