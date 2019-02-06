@@ -13,7 +13,7 @@
   position: relative;
 }
 
-header {
+#ecomm-header {
   height: 125px;
   width: 100%;
   display: none;
@@ -229,6 +229,31 @@ input::placeholder {
 #buy:hover + #buy-con {
   display: flex;
   opacity: 1;
+}
+
+.info {
+  height: 300px;
+  width: 100%;
+  text-align: center;
+}
+
+.info ul {
+  width: 100%;
+  text-align: center;
+}
+
+.info ul h1 {
+  height: 50px;
+  width: 400px;
+  margin: 5px;
+  border: 1px solid white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  flex-direction: column;
+  margin: auto;
+  font-size: 30px;
 }
 
 .dropitem h2 {
