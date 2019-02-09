@@ -1,4 +1,4 @@
-let header = document.getElementById('header');
+let header = document.getElementById('ecomm-header');
 let dropdown = document.getElementById("header-drpdwn");
 let nav = document.getElementById("primary-nav");
 let ecommerce = document.getElementById("ecomm-con");
